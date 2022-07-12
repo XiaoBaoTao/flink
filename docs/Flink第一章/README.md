@@ -84,6 +84,54 @@ Hadoop -> Spark -> Flume, Redis, Kafka, Hbase -> Flink
   1. [https://flink.apache.org/](https://flink.apache.org/)
 
 
+## Flink介绍
+
+Stateful Computations over Data Streams 
+
+大规模，海量数据分析框架:
+  + 分布式
+  + 并行计算
+
+<img src="https://flink.apache.org/img/flink-home-graphic.png">
+
+
+###处理对象
+  + 数据流 , 将数据抽象到`Data Streams`中， Java中的抽象类为`DataStream` 
+  + 数据流分为两种，
+    + 有界数据流: 批处理, 有开始时间和结束时间
+    + 无界数据流: 流处理， 无结束时间
+
+
+### 如何处理
+  `stateful computation` <状态计算>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
