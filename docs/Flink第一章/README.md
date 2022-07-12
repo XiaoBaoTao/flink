@@ -116,6 +116,61 @@ Stateful Computations over Data Streams
 
 柏林工业大学实验室@2014年; 
 
+### 流式数据处理的思想
+网站 -> kafka -> source -> filter -> map -> 分组聚合 -> sink -> redis
+
++ 产生一条数据，就处理一条数据，并且是实时处理； 
++ Flink流式计算程序中， 无论source, transformation, 还是Sink, 都是由多个任务来进行操作的。 并行计算
++ 先运行Task, 数据一来立马开始计算; 
+
+
+Source ——> DataStream -> map, flatmap, filter -> Sink. 
+
+Flink处理任务之前，需要分配资源；
+
+### 算子(Operator)的概念
+
+Source Operator -> Transformation Operator -> Sink Operator 
+
++ 每个算子可以有多个并行度, 多个Task并行计算；
++ 算子之间就是数据流
+
+### Flink的应用场景
+
+实时数仓，实时监控，实时报表，流数据分析；
+
+
+## Flink的安装部署
+
+### 架构
+
+Flink Client -> Submit Jobs -> Flink Cluster -> 分配资源
+
+管理资源， 分配资源给Job运行；
+
+
+    JobManager(主节点)  -->     TaskManager   slot(资源槽T) * 3
+                       -->     TaskManager   slot(资源槽T) * 3
+                       -->     TaskManager   slot(资源槽T) * 3 
+
+
+
+
+### Flink运行模式
+
+本地模式： JobManager & TaskManager 
+
+集群模式  Yarn  (国内主要)
+
+容器模式  K8S  
+
+
+
+
+
+
+
+
 
 
 
