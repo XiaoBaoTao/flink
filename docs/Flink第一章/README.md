@@ -45,7 +45,7 @@ Flink 2019年被Alibaba收购，发展方在XZ啧啧啧自知则知之安全q'w'
     + 依赖YARN
     + 依赖HDFS
 
-流处理，一条一条数据处理；流水线；
+流处理，`一条一条`数据处理, 每次处理`一条`数据；流水线；
 
 Hadoop -> Spark -> Flume, Redis, Kafka, Hbase -> Flink
 
@@ -60,7 +60,7 @@ Hadoop -> Spark -> Flume, Redis, Kafka, Hbase -> Flink
 
 ***
 
-1.12之前，流批API是分开的； 流处理：
+1.12.0之前，流批API是分开的； 流处理：
 
 + 之后的版本，都可以用DataStream#Operator来处理；
 
@@ -68,7 +68,7 @@ Hadoop -> Spark -> Flume, Redis, Kafka, Hbase -> Flink
 
 + 核心类： DataSet # Operator
 
-1.12之后，使用1套API, 核心类 DataStream, 设置模式即可；
+1.12.0之后，使用1套API, 核心类 DataStream, 设置模式即可；
 
 学习以1.13版本；
 
@@ -84,6 +84,7 @@ Hadoop -> Spark -> Flume, Redis, Kafka, Hbase -> Flink
 分享：
 
 1. [https://flink.apache.org/](https://flink.apache.org/)
+1. [https://github.com/apache/flink](https://github.com/apache/flink)
 
 ## Flink介绍
 
@@ -108,11 +109,12 @@ Stateful Computations over Data Streams
 + `stateful computation` <状态计算>
 + ** 每次计算过程中的中间值，即为状态 **
 
-```text
-Apache Flink is a framework and distributed processing engine for stateful computations over unbounded and bounded data streams. Flink has been designed to run in all common cluster environments, perform computations at in-memory speed and at any scale.
-```
-   
 
+     Apache Flink is a framework and distributed processing engine for stateful computations over unbounded and bounded data streams. 
+     Flink has been designed to run in all common cluster environments, 
+     perform computations at in-memory speed and at any scale.
+
+柏林工业大学实验室@2014年; 
 
 
 
