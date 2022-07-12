@@ -60,50 +60,57 @@ Hadoop -> Spark -> Flume, Redis, Kafka, Hbase -> Flink
 
 ***
 
-1.12之前，流批API是分开的；
-流处理：
-  + 之后的版本，都可以用DataStream#Operator来处理；
+1.12之前，流批API是分开的； 流处理：
+
++ 之后的版本，都可以用DataStream#Operator来处理；
 
 批处理
-  + 核心类： DataSet # Operator 
+
++ 核心类： DataSet # Operator
 
 1.12之后，使用1套API, 核心类 DataStream, 设置模式即可；
 
 学习以1.13版本；
 
 ### Flink优秀的四点：
-  + State
-  + CheckPoint
-  + Window
-  + Time 
 
++ State
++ CheckPoint
++ Window
++ Time
 
 `Flink Table API 和SQL, 推荐使用SQL编程分析`
 
 分享：
-  1. [https://flink.apache.org/](https://flink.apache.org/)
 
+1. [https://flink.apache.org/](https://flink.apache.org/)
 
 ## Flink介绍
 
-Stateful Computations over Data Streams 
+Stateful Computations over Data Streams
 
 大规模，海量数据分析框架:
-  + 分布式
-  + 并行计算
+
++ 分布式
++ 并行计算
 
 <img src="https://flink.apache.org/img/flink-home-graphic.png">
 
+### 处理对象
 
-###处理对象
-  + 数据流 , 将数据抽象到`Data Streams`中， Java中的抽象类为`DataStream` 
-  + 数据流分为两种，
++ 数据流 , 将数据抽象到`Data Streams`中， Java中的抽象类为`DataStream`
++ 数据流分为两种，
     + 有界数据流: 批处理, 有开始时间和结束时间
     + 无界数据流: 流处理， 无结束时间
 
-
 ### 如何处理
-  `stateful computation` <状态计算>
+
++ `stateful computation` <状态计算>
++ ** 每次计算过程中的中间值，即为状态 **
+
+```text
+Apache Flink is a framework and distributed processing engine for stateful computations over unbounded and bounded data streams. Flink has been designed to run in all common cluster environments, perform computations at in-memory speed and at any scale.
+```
    
 
 
