@@ -36,6 +36,8 @@ Flink 2019年被Alibaba收购，发展方在XZ啧啧啧自知则知之安全q'w'
 + 计算， MR, Spark
     + Hive将SQL转换为MR,或者Spark
 
+批处理；
+
 ### 实时计算:
 
 + 存储，Kafka
@@ -43,18 +45,20 @@ Flink 2019年被Alibaba收购，发展方在XZ啧啧啧自知则知之安全q'w'
     + 依赖YARN
     + 依赖HDFS
 
+流处理，一条一条数据处理；流水线；
+
 Hadoop -> Spark -> Flume, Redis, Kafka, Hbase -> Flink
 
 实时的概念为，只要数据一产生，立即处理输出；
 
-
 大数据中使用Redis内存数据库的场景
-  + 存储实时计算结果
-    + Flink将实时计算的结果存储在redis, 前端从redis中读取
-  + 缓存黑名单或者配置监控
-    + 实时监控
 
+    + 存储实时计算结果
+      + Flink将实时计算的结果存储在redis, 前端从redis中读取
+    + 缓存黑名单或者配置监控
+        + 实时监控
 
+***
 
 
 
