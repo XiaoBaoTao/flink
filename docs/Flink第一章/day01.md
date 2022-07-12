@@ -48,7 +48,17 @@ Hadoop -> Spark -> Flume, Redis, Kafka, Hbase -> Flink
 实时的概念为，只要数据一产生，立即处理输出；
 
 
+大数据中使用Redis内存数据库的场景
+  + 存储实时计算结果
+    + Flink将实时计算的结果存储在redis, 前端从redis中读取
+  + 缓存黑名单或者配置监控
+    + 实时监控
 
+
+
+
+
+  
 
 
 
