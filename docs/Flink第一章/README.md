@@ -60,9 +60,31 @@ Hadoop -> Spark -> Flume, Redis, Kafka, Hbase -> Flink
 
 ***
 
+1.12之前，流批API是分开的；
+流处理：
+  + 之后的版本，都可以用DataStream#Operator来处理；
+
+批处理
+  + 核心类： DataSet # Operator 
+
+1.12之后，使用1套API, 核心类 DataStream, 设置模式即可；
+
+学习以1.13版本；
+
+### Flink优秀的四点：
+  + State
+  + CheckPoint
+  + Window
+  + Time 
 
 
-  
+`Flink Table API 和SQL, 推荐使用SQL编程分析`
+
+分享：
+  1. [https://flink.apache.org/](https://flink.apache.org/)
+
+
+
 
 
 
