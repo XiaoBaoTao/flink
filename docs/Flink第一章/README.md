@@ -149,9 +149,9 @@ Flink Client -> Submit Jobs -> Flink Cluster -> 分配资源
 管理资源， 分配资源给Job运行；
 
 
-    JobManager(主节点)  -->     TaskManager   slot(资源槽T) * 3
-                       -->     TaskManager   slot(资源槽T) * 3
-                       -->     TaskManager   slot(资源槽T) * 3 
+    client -> JobManager(主节点)  -->     TaskManager   slot(资源槽T) * 3
+                                 -->     TaskManager   slot(资源槽T) * 3
+                                 -->     TaskManager   slot(资源槽T) * 3 
 
 
 
@@ -162,7 +162,7 @@ Flink Client -> Submit Jobs -> Flink Cluster -> 分配资源
 
 集群模式  Yarn  (国内主要)
 
-容器模式  K8S  
+容器模式  K8S
 
 
 
